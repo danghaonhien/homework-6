@@ -22,3 +22,19 @@ body {
 .city {
     font-size: 50px;
 }
+.temp {
+    font-size: 30px;
+}
+.mintemp {
+    font-size: 20px;
+}
+.maxtemp {
+    font-size: 20px;
+}
+
+#temperature {
+    margin-top: 15px;
+}
+#timeContainer {
+    margin-top: 15px;
+}

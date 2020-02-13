@@ -1,8 +1,13 @@
 $(document).ready(function(){
-    var day = moment().format('MMM Do YY');
-$("#realTime").text(day)
-let time = moment().format("hh:mm a");
-$("#time").text(time);
+    var update = function () {
+        var day = moment().format('MMM Do YY');
+    $("#realTime").text(day)
+    let time = moment().format("hh:mm:ss a");
+    $("#time").text(time);
+    };
+        update();
+        setInterval(update, 1000);
+    
 var APIKey = "166a433c57516f51dfab1f7edaed8413";
     // Here we are building the URL we need to query the database
     var queryURL = "https://api.openweathermap.org/data/2.5/weather?q=Berkeley&units=imperial&appid=" + APIKey;
@@ -23,6 +28,8 @@ var APIKey = "166a433c57516f51dfab1f7edaed8413";
     //   const f = (response.main.temp - 273.15) * 1.8 + 32;
       // Hint: To convert from Kelvin to Fahrenheit: F = (K - 273.15) * 1.80 + 32
       $('.temp').text(response.main.temp + " F ");
+      $('.mintemp').text(response.main.temp_min + " F ");
+      $('.maxtemp').text(response.main.temp_max + " F ");
       // Create CODE HERE to dump the temperature content into HTML
     });
 

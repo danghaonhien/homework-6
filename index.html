@@ -5,8 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Weather Forcaster</title>
     <link rel="stylesheet" href="style.css" />
-    <link href="https://fonts.googleapis.com/css?family=Odibee+Sans&display=swap" rel="stylesheet">
-   
+    <link
+      href="https://fonts.googleapis.com/css?family=Odibee+Sans&display=swap"
+      rel="stylesheet"
+    />
+
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css"
@@ -19,34 +22,42 @@
   </head>
   <body>
     <div class="ui container center aligned " id="container">
-        <!-- CITY name -->
+      <!-- CITY name -->
       <div class="ui segment">
-          <div class="ui center aligned grid">
-        <div class="column"><p class="city"></p></div>
-    </div>
-    <!-- Ttime -->
-        <div class="row"><p id="realTime"></p></div>
-        <div class="row"><p id="time"></p></div>
+        <div class="ui center aligned grid">
+          <div class="column"><p class="city"></p></div>
+        </div>
+        <!-- Ttime -->
+        <div id="timeContainer">
+          <div class="row"><p id="realTime"></p></div>
+          <div class="row"><p id="time"></p></div>
+        </div>
 
-     <div class="two column  stackable middle aligned ui grid">
-  <div class="column">
-    <div class="ui segment">
-      <p class="temp"></p>
-      <p></p>
-    </div>
-  </div>
-  <div class="column">
-    <div class="ui segment">
-      <p></p>
-      <p></p>
-    </div>
-  </div>
-</div>
+        <!-- temperature -->
+        <div
+          class="two column stackable middle aligned ui grid"
+          id="temperature"
+        >
+            <div class="column">
+              <p class="temp"></p>
+              <div class="ui divider"></div>
+<!-- humidity -->
+              <div class="ui two column grid">
+                <div class="column"><p class="wind"></p></div>
+                <div class="column"><p class="humidity"></p></div>
+              </div>
+          </div>
+          <!-- min/max -->
+          <div class="column">
+            <p class="mintemp"></p>
 
-   
+            <div class="ui divider"></div>
+            <p class="maxtemp"></p>
+          </div>
+        </div>
       </div>
     </div>
-
+    <script src="lib/moment/moment.min.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
