@@ -1,25 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Weather Forcaster</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Odibee+Sans&display=swap" rel="stylesheet">
+   
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css"
+    />
     <script
-src="https://code.jquery.com/jquery-3.4.1.min.js"
-integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-crossorigin="anonymous"></script>
-    <script
-  src="https://code.jquery.com/jquery-3.4.1.js"
-  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
-  crossorigin="anonymous"></script>
-</head>
-<body>
-    
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="ui container center aligned " id="container">
+        <!-- CITY name -->
+      <div class="ui segment">
+          <div class="ui center aligned grid">
+        <div class="column"><p class="city"></p></div>
+    </div>
+    <!-- Ttime -->
+        <div class="row"><p id="realTime"></p></div>
+        <div class="row"><p id="time"></p></div>
 
+     <div class="two column  stackable middle aligned ui grid">
+  <div class="column">
+    <div class="ui segment">
+      <p class="temp"></p>
+      <p></p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="ui segment">
+      <p></p>
+      <p></p>
+    </div>
+  </div>
+</div>
 
+   
+      </div>
+    </div>
 
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
