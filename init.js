@@ -1,4 +1,5 @@
 function init(){
+  
     var APIKey = "166a433c57516f51dfab1f7edaed8413";
     if (navigator.geolocation) {
       navigator.geolocation.getCurrentPosition(function(position) {
@@ -14,7 +15,7 @@ function init(){
             return response.json();
           })
           .then(function(data) {
-              $(".hide").removeClass(".hide")
+            $(".title").removeClass(".hide")
             var city = data.city.name;
             // Log the data to the console
             console.log(data);

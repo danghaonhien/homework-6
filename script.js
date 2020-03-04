@@ -8,7 +8,7 @@ $(document).ready(function() {
   update();
   setInterval(update, 1000);
   init();
- $(".hide").removeClass(".hide")
+  $(".title").removeClass(".hide")
 let tomorrow=moment(new Date()).add(1,"days").format("dddd");
 let day2=moment(new Date()).add(2,"days").format("dddd");
 let day3=moment(new Date()).add(3,"days").format("dddd");
@@ -20,7 +20,7 @@ $(".day3").text(day3)
 $(".day4").text(day4)
 $(".day5").text(day5)
   $("#search").on("click", () => {
-    $(".hide").addClass(".hide");
+    $(".title").addClass(".hide");
     let input = $(".cityList").val();
     $(".city").text(input);
     $("<input>").text("")
