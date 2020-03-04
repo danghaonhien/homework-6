@@ -29,7 +29,7 @@ $(".day5").text(day5)
       url: queryURL,
       method: "GET"
     }).then(function(response) {
-      var city = response.name;
+      var city = response.city.name;
       // Log the response to the console
       console.log(response);
       $(".city").text(city);
@@ -75,7 +75,7 @@ $(".day5").text(day5)
           return response.json();
         })
         .then(function(data) {
-          var city = data.name;
+          var city = data.city.name;
           // Log the data to the console
           console.log(data);
           $(".city").text(city);
