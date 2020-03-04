@@ -7,6 +7,7 @@ $(document).ready(function() {
   };
   update();
   setInterval(update, 1000);
+  init();
 let tomorrow=moment(new Date()).add(1,"days").format("dddd");
 let day2=moment(new Date()).add(2,"days").format("dddd");
 let day3=moment(new Date()).add(3,"days").format("dddd");
@@ -33,7 +34,7 @@ $(".day5").text(day5)
       // Log the response to the console
       console.log(response);
       $(".city").text(city);
-      $(".weather").text(response.list[0].weather.main);
+      $(".weather").text(response.list[0].weather[0].main);
       $(".wind").text(`Wind speed: ${response.list[0].speed}`);
       $(".humidity").text(`Humidity: ${response.list[0].humidity}`);
       // Create CODE HERE to calculate the temperature (converted from Kelvin)
@@ -59,7 +60,7 @@ $(".day5").text(day5)
 
     });
   });
-
+function init(){
   var APIKey = "166a433c57516f51dfab1f7edaed8413";
   if (navigator.geolocation) {
     navigator.geolocation.getCurrentPosition(function(position) {
@@ -79,7 +80,7 @@ $(".day5").text(day5)
           // Log the data to the console
           console.log(data);
           $(".city").text(city);
-          $(".weather").text(data.list[0].weather.main);
+          $(".weather").text(data.list[0].weather[0].main);
           $(".wind").text(`Wind speed: ${data.list[0].speed}`);
           $(".humidity").text(`Humidity: ${data.list[0].humidity}`);
           // Create CODE HERE to calculate the temperature (converted from Kelvin)
@@ -110,5 +111,5 @@ $(".day5").text(day5)
           console.log(error);
         });
     });
-  }
+  }}
 });
