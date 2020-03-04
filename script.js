@@ -20,7 +20,7 @@ $(".day3").text(day3)
 $(".day4").text(day4)
 $(".day5").text(day5)
   $("#search").on("click", () => {
-    $(".hide").addClass(".hide");
+    $("<h1>").addClass(".hide");
     let input = $(".cityList").val();
     $(".city").text(input);
     $("<input>").text("")
