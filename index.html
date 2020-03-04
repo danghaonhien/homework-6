@@ -24,25 +24,17 @@
     <div class="ui container center aligned " id="container">
       <!-- CITY name -->
       <div class="ui segment">
-        <div class="ui center aligned grid">
-          <div class="column">
-            <div class="ui simple dropdown item">
-              Select City
-              <i class="dropdown icon"></i>
-              <div class="menu" class="cityList" >
-                <div class="item"></div>
-                <div class="item"></div>
-                <div class="item"></div>
-              </div>
-            </div>
-            <br>
-            <br />
-            <br />
-            <div class="column">
-              <div class="city"></div>
-            </div>
+        <div class="ui center aligned grid"></div>
+        <div class="column">
+          <div class="fluid ui icon input">
+            <input type="text" placeholder="Type City..." class="cityList" />
+            <i class="circular search link icon" id="search"></i>
           </div>
         </div>
+        <div class="column">
+          <div class="city"></div>
+        </div>
+
         <!-- Ttime -->
         <div id="timeContainer">
           <div class="row"><p id="realTime"></p></div>
@@ -73,7 +65,42 @@
             <p class="maxtemp"></p>
           </div>
         </div>
+        
+        <div class="ui five column grid" >
+          <div class="column">
+            <p class="tomorrow"></p>
+          <div class="Fmin"></div>
+          <div class="ui divider"></div>
+          <div class="Fmax"></div>
+        </div>
+          <div class="column">
+            <p class="day2"></p>
+          <div class="Fmin2"></div>
+          <div class="ui divider"></div>
+          <div class="Fmax2"></div>
+        </div>
+          <div class="column">
+            <p class="day3"></p>
+          <div class="Fmin3"></div>
+          <div class="ui divider"></div>
+          <div class="Fmax3"></div>
+        </div>
+          <div class="column">
+            <p class="day4"></p>
+          <div class="Fmin4"></div>
+          <div class="ui divider"></div>
+          <div class="Fmax4"></div>
+        </div>
+          <div class="column">
+            <p class="day5"></p>
+          <div class="Fmin5"></div>
+          <div class="ui divider"></div>
+          <div class="Fmax5"></div>
+        </div>
       </div>
+
+      </div>
+     
     </div>
 
     <script src="lib/moment/moment.min.js"></script>

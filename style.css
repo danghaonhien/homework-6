@@ -18,9 +18,13 @@ body {
     background-color:aqua ;
   
 }
+.column{
+    margin-top:2em;
+}
 
 .city {
     font-size: 50px;
+    margin-bottom: .5em;
 }
 .temp {
     font-size: 30px;
@@ -37,4 +41,19 @@ body {
 }
 #timeContainer {
     margin-top: 15px;
+}
+.tomorrow {
+font-size: 1.25em;
+}
+.day2 {
+font-size: 1.25em;
+}
+.day3 {
+font-size: 1.25em;
+}
+.day4 {
+font-size: 1.25em;
+}
+.day5 {
+font-size: 1.25em;
 }
