@@ -57,3 +57,6 @@ font-size: 1.25em;
 .day5 {
 font-size: 1.25em;
 }
+.hide {
+    display: none;
+}

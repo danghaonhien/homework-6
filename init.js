@@ -14,6 +14,7 @@ function init(){
             return response.json();
           })
           .then(function(data) {
+              $(".hide").removeClass(".hide")
             var city = data.city.name;
             // Log the data to the console
             console.log(data);
