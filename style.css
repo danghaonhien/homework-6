@@ -58,5 +58,5 @@ font-size: 1.25em;
 font-size: 1.25em;
 }
 .hide {
-    display: none;
+    visibility: hidden;
 }
