@@ -8,7 +8,7 @@ $(document).ready(function() {
   update();
   setInterval(update, 1000);
   init();
- 
+ $(".hide").removeClass(".hide")
 let tomorrow=moment(new Date()).add(1,"days").format("dddd");
 let day2=moment(new Date()).add(2,"days").format("dddd");
 let day3=moment(new Date()).add(3,"days").format("dddd");
