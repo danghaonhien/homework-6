@@ -46,16 +46,21 @@ $(".day5").text(day5)
       $(".mintemp").text(response.list[0].temp.min + " F ");
       $(".maxtemp").text(response.list[0].temp.max + " F ");
       localStorage.setItem("Custom Weather", JSON.stringify(response));
+      $(".weather1").text(response.list[1].weather[0].main)
       $(".Fmin").text(response.list[1].temp.min + " F ");
       $(".Fmax").text(response.list[1].temp.max + " F ");
-      $(".Fmin2").text(response.list[3].temp.min + " F ");
-      $(".Fmax2").text(response.list[3].temp.max + " F ");
-      $(".Fmin3").text(response.list[4].temp.min + " F ");
-      $(".Fmax3").text(response.list[4].temp.max + " F ");
-      $(".Fmin4").text(response.list[5].temp.min + " F ");
-      $(".Fmax4").text(response.list[5].temp.max + " F ");
-      $(".Fmin5").text(response.list[6].temp.min + " F ");
-      $(".Fmax5").text(response.list[6].temp.max + " F ");
+      $(".weather2").text(response.list[2].weather[0].main)
+      $(".Fmin2").text(response.list[2].temp.min + " F ");
+      $(".Fmax2").text(response.list[2].temp.max + " F ");
+      $(".weather3").text(response.list[3].weather[0].main)
+      $(".Fmin3").text(response.list[3].temp.min + " F ");
+      $(".Fmax3").text(response.list[3].temp.max + " F ");
+      $(".weather4").text(response.list[4].weather[0].main)
+      $(".Fmin4").text(response.list[4].temp.min + " F ");
+      $(".Fmax4").text(response.list[4].temp.max + " F ");
+      $(".weather5").text(response.list[5].weather[0].main)
+      $(".Fmin5").text(response.list[5].temp.min + " F ");
+      $(".Fmax5").text(response.list[5].temp.max + " F ");
       // Cache the response to a variable
       // weather = response;
       localStorage.setItem("Current Weather", JSON.stringify(response));

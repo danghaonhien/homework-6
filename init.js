@@ -32,14 +32,19 @@ function init(){
             // Cache the data to a variable
             // weather = data;
             localStorage.setItem("Current Weather", JSON.stringify(data));
-            $(".Fmin").text(data.list[0].temp.min + " F ");
-            $(".Fmax").text(data.list[0].temp.max + " F ");
+            $(".weather1").text(data.list[1].weather[0].main)
+            $(".Fmin").text(data.list[1].temp.min + " F ");
+            $(".Fmax").text(data.list[1].temp.max + " F ");
+            $(".weather2").text(data.list[2].weather[0].main)
             $(".Fmin2").text(data.list[2].temp.min + " F ");
             $(".Fmax2").text(data.list[2].temp.max + " F ");
+            $(".weather3").text(data.list[3].weather[0].main)
             $(".Fmin3").text(data.list[3].temp.min + " F ");
             $(".Fmax3").text(data.list[3].temp.max + " F ");
+            $(".weather4").text(data.list[4].weather[0].main)
             $(".Fmin4").text(data.list[4].temp.min + " F ");
             $(".Fmax4").text(data.list[4].temp.max + " F ");
+            $(".weather5").text(data.list[5].weather[0].main)
             $(".Fmin5").text(data.list[5].temp.min + " F ");
             $(".Fmax5").text(data.list[5].temp.max + " F ");
             // Cache the data to a variable
